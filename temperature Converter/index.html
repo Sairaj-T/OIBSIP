@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="temperature-converter">
+        <h2 class="title">Temperature Converter</h2>
+        <div class="result">
+          <span class="result-heading">Result (Celsius)</span>
+          <h2 class="celsius-value" id="celsius">1</h2>
+        </div>
+        <!-- input filed -->
+        <div class="degree-type">
+          <!-- for degree -->
+          <div class="degree-feild">
+            <label for="degree">Degrees :</label>
+            <input type="number" name="degree" id="degree" />
+          </div>
+          <!-- for opt selection  -->
+          <div class="temp-field">
+            <label for="temp-type">Type :</label>
+            <select name="temperatures" id="temp-type" autocomplete="on">
+              <option id="fahrenhite" value="fahrenhite">fahrenhite</option>
+              <option id="kelvin" value="kelvin">Kelvin</option>
+            </select>
+          </div>
+        </div>
+        <button id="convert-btn">Convert</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
